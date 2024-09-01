@@ -1,0 +1,95 @@
+/*
+********************
+WARNING! all changes via stylesheet scss file
+********************
+*/
+
+@import "scss/bootstrap";
+
+@font-face {
+    font-family: Regular;
+    src: url(./fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf);
+}
+@font-face {
+    font-family: Light;
+    src: url(./fonts/Roboto_Slab/static/RobotoSlab-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: Medium;
+    src: url(./fonts/Roboto_Slab/static/RobotoSlab-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: Bold;
+    src: url(./fonts/Roboto_Slab/static/RobotoSlab-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: Thin;
+    src: url(./fonts/Roboto_Slab/static/RobotoSlab-Thin.ttf);
+  }
+
+
+  @font-face {
+    font-family: headline;
+    src: url(./fonts/Patua_One/PatuaOne-Regular.ttf);
+  }
+
+
+$primary: #d3a211;
+$link-color:  $gray-700;
+
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: Regular , sans-serif;
+    color:$black;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+a{
+  color:$link-color;
+  text-decoration: none;
+  &:hover{
+    color:$primary;
+  }
+  
+}
+
+header{
+  .top-strip{
+    @media (max-width:767px) {
+      font-size: 14px;
+    }
+  }
+  a{
+    &.site-title{
+      font-family: headline;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 1;
+      @media (max-width:1023px) {
+        font-size: 30px;
+      }
+    }
+    &.item-menu{
+      border-bottom: 1px solid transparent;
+      &:hover, &.current{
+        border-bottom-color:$primary;
+        color:$primary;
+      }
+    }
+  }
+}
+footer{
+  a.site-title{
+    font-family: headline;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1;
+    
+}
+}
+
